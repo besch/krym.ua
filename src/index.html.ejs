@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Krym.ua</title>
+    </head>
+    <body>
+        <div id="root"></div>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Krym.ua</title>
-</head>
-
-<body>
-    <div id="root"></div>
-
-    <!-- Dependencies -->
-    <% if (webpackConfig.mode == 'production') { %>
+        <!-- Dependencies -->
+        <% if (webpackConfig.mode == 'production') { %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js" integrity="sha256-2EQx5J1ux3sjgPLtDevlo449XNXfvEplcRYWIF6ui8w=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js" integrity="sha256-3NNU/yoE0R7VxxapKiw/hkgQzcSMztyclb5RpeVlV7Y=" crossorigin="anonymous"></script>
         <% } else { %>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.development.js" integrity="sha256-3XSUHlmFvUZcBr7186Oc9ojYQJOumxpA6NgH3l+bQX8=" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.development.js" integrity="sha256-Ue+9J/XrmC350loaA3GEO5DZu/zhvv/ORcmphEiI6mw=" crossorigin="anonymous"></script>
-            <% } %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.development.js" integrity="sha256-3XSUHlmFvUZcBr7186Oc9ojYQJOumxpA6NgH3l+bQX8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.development.js" integrity="sha256-Ue+9J/XrmC350loaA3GEO5DZu/zhvv/ORcmphEiI6mw=" crossorigin="anonymous"></script>
+        <% } %>
 
-                <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-                <script>
-                    // Initialize Firebase
-                    var config = {
-                        apiKey: "AIzaSyCkmD-mMw8fq8DxzFNjxoTw-V-E7e02mes",
-                        authDomain: "krym-ua.firebaseapp.com",
-                        databaseURL: "https://krym-ua.firebaseio.com",
-                        projectId: "krym-ua",
-                        storageBucket: "krym-ua.appspot.com",
-                        messagingSenderId: "28347873059"
-                    };
-                    firebase.initializeApp(config);
-                </script>
-</body>
-
+        <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCkmD-mMw8fq8DxzFNjxoTw-V-E7e02mes",
+                authDomain: "krym-ua.firebaseapp.com",
+                databaseURL: "https://krym-ua.firebaseio.com",
+                projectId: "krym-ua",
+                storageBucket: "krym-ua.appspot.com",
+                messagingSenderId: "28347873059"
+            };
+            firebase.initializeApp(config);
+        </script>
+    </body>
 </html>
