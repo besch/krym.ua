@@ -12,3 +12,20 @@ $border-color: red;
 .custom-divider {
     margin: 5rem 0;
 }
+
+.bd-callout+.bd-callout {
+    margin-top: -.25rem;
+}
+
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e;
+}

@@ -1,4 +1,7 @@
 import * as React from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const imgMe = require('../../assets/img/me.jpg');
 
 export default class About extends React.Component {
@@ -6,8 +9,10 @@ export default class About extends React.Component {
         return (
             <div>
                 {/* <div className="card bg-light mb-3"> */}
-                <div className="card border-secondary bg-light mb-3">
-                    <div className="card-header">Мудрость</div>
+                <div className="card border-secondary alert-warning mb-3">
+                    <div className="card-header">
+                        <FontAwesomeIcon icon="lightbulb" className="text-warning" />{' '}Мудрость
+                    </div>
                     <div className="card-body">
                         <p className="card-text">Никто не посмеет упрекнуть тигра в том, что он обратился в бегство, завидев, как малые капканы меняют на крупные. Прояви он медлительность, - было бы хуже: вряд ли бы ему удалось добраться до тех мест, где он царствует безраздельно. Вас тоже никто не посмеет упрекнуть, если вы с самого начала распознаете замыслы тех, кто ставит вам ловушки. Только вы не побежите, а с чувством достоинства уверенно уйдете от опасности, к собственному удовлетворению и величайшему разочарованию тех, кто хотел, чтобы вы пали жертвой его козней.</p>
                     </div>
